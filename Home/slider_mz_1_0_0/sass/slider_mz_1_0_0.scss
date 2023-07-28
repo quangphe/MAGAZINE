@@ -1,0 +1,12 @@
+.slider_mz_1_0_0{
+    margin-top: 95px;
+    img{
+        display: block;
+        width: 100%;
+        height:auto;
+    }
+
+    @media (max-width: 425px) {
+        margin-top: 85px;
+    }
+}
