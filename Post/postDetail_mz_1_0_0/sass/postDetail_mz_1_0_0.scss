@@ -1,9 +1,22 @@
+@import '../../../assets/custom';
+
 .postDetail_mz_1_0_0 {
     &__title {
         font-size: 25px;
         font-weight: 600;
         color: #007ac1;
         margin-top: 0;
+    }
+
+    &__navg {
+        display: flex;
+        padding: 0;
+        margin: 0;
+        li {
+            list-style-type: none;
+            display: flex;
+            padding-right: 10px;
+        }
     }
 
     &__subTitle {
