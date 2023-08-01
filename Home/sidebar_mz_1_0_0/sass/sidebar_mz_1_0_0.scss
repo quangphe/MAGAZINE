@@ -1,4 +1,4 @@
-$primary : #337ab7;
+@import '../../../assets/custom';
 
 .sidebar_mz_1_0_0 {
     &__breadcrumb {
@@ -6,15 +6,20 @@ $primary : #337ab7;
         color: #fff;
         padding: 7px 20px;
         font-size: 20px;
-        margin-bottom: 20px;
+        margin-bottom: 15px;
     }
 
     &__item {
         display: flex;
-        align-items: center;
-        gap: 20px;
+        align-items: flex-start;
+        gap: 10px;
+        margin-bottom: 15px;
+    }
+
+    &__pic {
+        width: 50%;
         img {
-            width: 30%;
+            width: 100%;
             height: auto;
             display: block;
         }
@@ -23,6 +28,7 @@ $primary : #337ab7;
     &__title {
         font-size: 16px;
         margin-top: 10px;
+        margin-top: 0;
     }
 
     &__banner {
@@ -38,6 +44,9 @@ $primary : #337ab7;
         }
         &__title {
             font-size: 14px;
+        }
+        &__item {
+            margin-top: 15px;
         }
     }
 

@@ -24,6 +24,9 @@
 
     @media (max-width: 425px) {
         width: 100%;
+        &__title {
+            font-size: 22px;
+        }
         &__text {
             img {
                 width: 100%;

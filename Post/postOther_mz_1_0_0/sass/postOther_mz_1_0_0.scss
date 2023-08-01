@@ -1,6 +1,8 @@
+@import '../../../assets/custom';
+
 .postOther_mz_1_0_0 {
     &__titleOther {
-        color: #007ac1;
+        color: $primary;
         font-size: 18px;
         font-weight: 600;
     }
@@ -8,7 +10,7 @@
     &__box {
         display: flex;
         align-items: center;
-        gap: 30px;
+        gap: 20px;
     }
 
     &__item {
@@ -28,13 +30,22 @@
     @media (max-width: 425px) {
         &__box {
             flex-direction: column;
-            gap: 10px;
+            gap: 15px;
         }
         &__item {
+            display: flex;
+            gap: 10px;
+        }
+        &__pic {
+            width: 50%;
             img {
-                height: 160px;
+                width: 100%;
+                height: 98px;
                 object-fit: cover;
             }
+        }
+        &__title {
+            text-align: justify;
         }
     }
 }

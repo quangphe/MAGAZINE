@@ -1,3 +1,5 @@
+@import '../../../assets/custom';
+
 .news_mz_2_0_0 {
 
     &__breadcrumb {
@@ -13,7 +15,7 @@
             width: 11px;
             height: 17px;
             display: block;
-            background: #007ac1;
+            background: $primary;
             left: 0;
             top: 0;
         }
@@ -23,11 +25,12 @@
         display: flex;
         flex-direction: column;
         gap: 30px;
+        margin-bottom: 25px;
     }
 
     &__boxTop {
         display: flex;
-        gap: 30px;
+        gap: 20px;
 
         img {
             width: 50%;
@@ -40,6 +43,11 @@
     &__title {
         font-size: 19px;
         font-weight: 600;
+        margin-top: 0;
+    }
+
+    &__subTitle {
+        text-align: justify;
     }
 
     &__desc {
@@ -49,7 +57,7 @@
     &__boxBottom {
         display: flex;
         align-items: center;
-        gap: 30px;
+        gap: 20px;
     }
 
     &__childItem {
@@ -151,16 +159,25 @@
         }
 
         &__subTitle {
-            display: none;
+            margin-bottom: 20px;
         }
 
         &__boxBottom {
-            gap: 12px;
+            gap: 15px;
+            flex-direction: column;
+        }
+
+        &__childItem {
+            display: flex;
+            gap: 15px;
+            img {
+                width: 50%;
+            }
         }
 
         &__childTitle {
             font-size: 13px;
-            margin-top: 6px;
+            margin-top: 0px;
         }
     }
 
