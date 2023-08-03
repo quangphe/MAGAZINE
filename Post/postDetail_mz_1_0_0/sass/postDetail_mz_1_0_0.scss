@@ -1,5 +1,3 @@
-@import '../../../assets/custom';
-
 .postDetail_mz_1_0_0 {
     &__title {
         font-size: 25px;
@@ -14,7 +12,7 @@
         border-bottom: 1px solid #ccc;
         line-height: 1.8;
         span a {
-            color: $primary;
+            color: var(--primary-color);
             font-weight: 600;
             &::after {
                 content: "";
@@ -56,13 +54,13 @@
     &__titleH2 {
         font-size: 21px;
         margin-top: 5px;
-        color: $primary;
+        color: var(--primary-color);
     }
 
     &__titleH3 {
         font-size: 18px;
         margin-top: 5px;
-        color: $primary;
+        color: var(--primary-color);
     }
 
     &__text {
@@ -70,7 +68,7 @@
         font-size: 16px;
         line-height: 1.8;
         a {
-            color: $primary;
+            color: var(--primary-color);
             &:hover {
                 color: $danger;
             }

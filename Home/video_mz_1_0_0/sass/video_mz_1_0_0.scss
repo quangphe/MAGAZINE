@@ -1,5 +1,3 @@
-@import '../../../assets/custom';
-
 .video_mz_1_0_0 {
     margin: 22px 0 40px;
     &__breadcrumb {
@@ -15,14 +13,14 @@
             width: 11px;
             height: 17px;
             display: block;
-            background: $primary;
+            background: var(--primary-color);
             left: 0;
             top: 0;
         }
     }
 
     &__box {
-        border-bottom: 1px solid $primary;
+        border-bottom: 1px solid var(--primary-color);
     }
 
     &__boxVideo {

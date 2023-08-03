@@ -1,5 +1,3 @@
-@import '../../../assets/custom';
-
 .cate_mz_2_0_0 {
     &__item {
         display: flex;
@@ -29,7 +27,7 @@
         margin-top: 6px;
         line-height: 1.3;
         &:hover {
-            color: $primary;
+            color: var(--primary-color);
         }
     }
 

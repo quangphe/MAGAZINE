@@ -1,8 +1,6 @@
-@import '../../../assets/custom';
-
 .postOther_mz_1_0_0 {
     &__titleOther {
-        color: $primary;
+        color: var(--primary-color);
         font-size: 22px;
         font-weight: 600;
         margin: 20px 0 8px;
@@ -46,7 +44,7 @@
         font-weight: 600;
         margin-top: 0px;
         &:hover {
-            color: $primary;
+            color: var(--primary-color);
         }
     }
 

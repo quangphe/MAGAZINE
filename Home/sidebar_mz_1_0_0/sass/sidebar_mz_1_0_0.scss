@@ -1,8 +1,6 @@
-@import '../../../assets/custom';
-
 .sidebar_mz_1_0_0 {
     &__breadcrumb {
-        background: $primary;
+        background: var(--primary-color);
         color: #fff;
         padding: 7px 20px;
         font-size: 20px;
@@ -30,7 +28,7 @@
         margin-top: 10px;
         margin-top: 0;
         &:hover {
-            color: $primary;
+            color: var(--primary-color);
         }
     }
 
