@@ -44,6 +44,9 @@
         font-size: 18px;
         font-weight: 600;
         margin-top: 0;
+        &:hover {
+            color: $primary;
+        }
     }
 
     &__subTitle {
@@ -74,6 +77,9 @@
     &__childTitle {
         font-size: 16px;
         margin-top: 12px;
+        &:hover {
+            color: $primary;
+        }
     }
 
     @media (max-width: 1200px) {
@@ -169,14 +175,18 @@
 
         &__childItem {
             display: flex;
-            gap: 15px;
+            gap: 10px;
+        }
+
+        &__pic {
+            width: 80%;
             img {
-                width: 50%;
+                width: 100%;
             }
         }
 
         &__childTitle {
-            font-size: 13px;
+            font-size: 14px;
             margin-top: 0px;
         }
     }

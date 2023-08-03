@@ -20,6 +20,7 @@
     &__logoTitle {
         margin: 0;
         font-size: 26px;
+        color: $primary;
     }
 
     &__menuMain {
@@ -33,15 +34,18 @@
         list-style: none;
         cursor: pointer;
         text-transform: uppercase;
-        font-size: 14px;
+        font-size: 15px;
         position: relative;
 
-        &:hover .header_mz_1_0_0__dropdown {
-            margin-top: 0px;
-            opacity: 1;
-            visibility: visible;
-            pointer-events: inherit;
-            transition: all 0.3s ease-out 0s;
+        &:hover {
+            color: $primary;
+            .header_mz_1_0_0__dropdown {
+                margin-top: 0px;
+                opacity: 1;
+                visibility: visible;
+                pointer-events: inherit;
+                transition: all 0.3s ease-out 0s;
+            }
         }
     }
 
@@ -51,7 +55,7 @@
 
     &__dropdown {
         position: absolute;
-        top: 74px;
+        top: 78px;
         left: -55px;
         background-color: #fff;
         box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.1);
@@ -60,10 +64,16 @@
         margin-top: 30px;
         opacity: 0;
         transform: translate(15%, 0);
+        border-radius: 6px;
+        width: 220px;
 
         ul {
             width: 80px;
             padding-left: 0;
+
+            a:hover {
+                color: $primary;
+            }
 
             li {
                 padding: 5px 0;
@@ -107,13 +117,13 @@
                 flex-direction: column;
                 overflow-y: auto;
                 position: fixed;
-                top: 58px;
+                top: 0;
                 left: 0;
                 bottom: 0;
                 padding: 20px 0;
                 margin: 0;
                 background: #fff;
-                width: 200px;
+                width: 280px;
                 z-index: 20;
                 transform: translateX(-100%);
                 transition: all .3s linear;
@@ -146,7 +156,8 @@
             padding: 0 20px 10px;
             border-bottom: 1px solid #eaeaea;
             &:hover .header_mz_1_0_0__dropdown {
-                margin-top: 8px;
+                margin: 12px 0 30px;
+                padding: 0 0 0 28px;
                 display: block;
             }
         }
@@ -154,13 +165,23 @@
         &__dropdown {
             left: 0%;
             height: 140px;
-            width: 199px;
+            width: 289px;
             z-index: 20;
             position: initial;
-            background: #f4f4f4;
             transform: translate(-10%, 0);
             display: none;
             box-shadow: none;
+            ul {
+                width: 241px;
+                li {
+                    list-style: none;
+                    border-bottom: none;
+                    background-color: #ededed;
+                    padding: 8px 10px;
+                    margin: 4px 0;
+                    font-size: 14px;
+                }
+            }
         }
 
         &__iconDown {
@@ -175,7 +196,7 @@
         }
     }
 
-    @media (max-width: 425px) {
+    @media (max-width: 1024px) {
         &__link {
             padding: 0;
         }
